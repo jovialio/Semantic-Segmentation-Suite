@@ -1,0 +1,4 @@
+python3 train.py --dataset dataset/data_dataset_voc --batch_size 1 --h_flip True --v_flip True --num_val_images 16 --continue_training True --num_epochs 300
+
+python3 predict.py --image dataset/data_dataset_voc/test/SKWAY1_0_6566.jpg --checkpoint_path checkpoints/0295/model.ckpt --model FC-DenseNet56 --dataset dataset/data_dataset_voc/
+
